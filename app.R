@@ -25,7 +25,31 @@ ui <- fluidPage(
 
 server <- function(input, output) {
   
-  #####################RECOLECCION#####################
+  # ------------------ *** INICIO RECOLECCION  ***------------------
+  output$contents <- renderTable({
+    
+    # input$file1 will be NULL initially. After the user selects
+    # and uploads a file, head of that data file by default,
+  
+    # when reading semicolon separated files,
+    # having a comma separator causes `read.csv` to error
+    tryCatch(
+      {
+        df <- read.csv("dataset/dataset1.csv" #si es que tiene cabecera
+                       #el separador
+        )   #si es que se necesita entrecomillado
+        #todos estos valores vienen del input
+      },
+      error = function(e) {
+        # return a safeError if a parsing error occurs
+        stop(safeError(e))
+      }
+    )
+    
+    
+  })
+  
+  # ------------------ *** FIN RECOLECCION        ***------------------
 
   
   #########################TRANSFORMACIÓN#########################
