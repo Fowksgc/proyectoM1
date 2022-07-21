@@ -10,6 +10,8 @@ source("www/transformacion.R")
 source("www/modelo.R")
 source("www/visualizacion.R")
 
+#hola
+
 ui <- fluidPage(
   ui<-navbarPage(title="Proyecto de Ciencia de Datos",
                  tabPanel("Presentación",presentacion),
