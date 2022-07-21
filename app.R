@@ -3,7 +3,7 @@ library(sqldf)
 library(plotly)
 library(dplyr)
 library(ggplot2)
-
+#Fowks wele a obo
 source("www/presentacion.R")
 source("www/recoleccion.R")
 source("www/transformacion.R")
