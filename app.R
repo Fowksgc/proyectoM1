@@ -3,7 +3,11 @@ library(sqldf)
 library(plotly)
 library(dplyr)
 library(ggplot2)
-#Fowks wele a obo
+
+# Jime wele a obo
+# akdmsklamd
+
+
 source("www/presentacion.R")
 source("www/recoleccion.R")
 source("www/transformacion.R")
