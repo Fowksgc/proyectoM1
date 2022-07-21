@@ -36,9 +36,8 @@ server <- function(input, output) {
     tryCatch(
       {
         df <- read.csv("dataset/dataset1.csv" #si es que tiene cabecera
-                       #el separador
-        )   #si es que se necesita entrecomillado
-        #todos estos valores vienen del input
+                      
+        )  
       },
       error = function(e) {
         # return a safeError if a parsing error occurs
