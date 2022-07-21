@@ -6,6 +6,7 @@ library(ggplot2)
 
 # Jime wele a obo
 # akdmsklamd
+# mmpatas
 
 
 source("www/presentacion.R")
